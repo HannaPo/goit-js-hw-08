@@ -1,3 +1,5 @@
+import SimpleLightbox from 'simplelightbox'
+import 'simplelightbox/dist/simple-lightbox.min.css'
 // Add imports above this line
 import { galleryItems } from './gallery-items';
 // Change code below this line
@@ -14,7 +16,7 @@ const galleryMarkup = galleryItems
 
 galleryEl.insertAdjacentHTML('afterbegin', galleryMarkup);
 
-let gallery = new SimpleLightbox('.gallery__item', {
+const gallery = new SimpleLightbox('.gallery__item', {
   captionsData: 'alt',
   captionDelay: 250,
 });
